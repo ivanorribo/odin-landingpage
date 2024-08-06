@@ -2,12 +2,16 @@ body {
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    height: 100vh;
+    margin: 0;
 }
 
 .header {
     background-color: #1f2937;
     color: white;
     padding-bottom: 20px;
+    flex: 1;
 }
 
 
@@ -24,14 +28,17 @@ a {
 
 .mainmenu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #1f2937;
     flex: 1;
+    padding-bottom: 30px;
+    gap: 30px;
 }
 
 .logo {
     align-content: center;
-    color: white;
+    color: #F9FAF8;
+    font-size: 24px;
 }
 
 .underheader {
@@ -44,35 +51,73 @@ a {
     align-items: center;
 }
 
+.hero-main-text {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
 .hero-text {
-    max-width: 300px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    border-radius: 5px;
+    border: 0;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 5px 20px;
+    max-width: 100px;
 }
 
 img {
-    max-width: 450px;
+    width: 500px;
     max-height: 200px;
 }
 
 .container {
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 60px;
     padding: 20px;
+    flex: 1;
 }
 
-.footer {
-    background-color: green;
+.third-part {
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    flex: 1;
 }
 
 .under-container {
-    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px ;
+    align-items: flex-end;
+}
+
+.inspiring {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.thor {
+ padding: 15px;
 }
 
 .title {
-    
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
 }
 
 .pictures{
@@ -81,13 +126,42 @@ img {
     width: 150px;
 }
 
+.under-pictures {
+    text-align: center;
+}
 .block-pictures {
     display: flex;
     gap: 15px;
 }
 
 .placeholder-container {
-    background-color: blue;
+    border-color: lightblue;
+    border-style: solid;
+    border-radius: 20px;
     width: 150px;
     height: 150px;
+}
+
+.upper-footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    flex: 1;
+}
+
+.call-action {
+    background-color: orange;
+    min-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    flex: 1;
+    align-items: center;
+    background-color: #1f2937;
 }
